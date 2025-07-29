@@ -259,18 +259,20 @@
 <section class="products" aria-label="Products">
   <div class="product fade-target" tabindex="0" role="button" aria-pressed="false"
        data-title="FitLog Pro — Weekly Digital Fitness Tracker"
-       data-desc='Stay motivated, organized, and on track with FitLog Pro, a comprehensive and beautifully designed digital fitness planner tailored to your weekly workout and nutrition goals.'
+       data-desc='Stay motivated, organized, and on track with FitLog Pro, a comprehensive and beautifully designed digital fitness planner tailored to your weekly workout and nutrition goals. Whether you\'re just starting your fitness journey or looking to optimize your routine, this planner provides everything you need to log your progress, reflect on your achievements, and set powerful goals.'
        data-buy="0VyfB">
     <h2>FitLog Pro — Weekly Digital Fitness Tracker</h2>
     <p>€4.99</p>
   </div>
+
   <div class="product fade-target" tabindex="0" role="button" aria-pressed="false"
-       data-title="Creative Planner"
-       data-desc="Organize your creative projects with this aesthetic digital planner."
-       data-buy="">
-    <h2>Creative Planner</h2>
-    <p>Coming Soon</p>
+       data-title="Creative Project Planner — Your Essential 4-Page Printable PDF"
+       data-desc="Stay organized, focused, and in control with the Creative Project Planner, designed to help you plan, track, and reflect on your projects with ease."
+       data-buy="nWQ5S">
+    <h2>Creative Project Planner</h2>
+    <p>€3.99</p>
   </div>
+
   <div class="product fade-target" tabindex="0" role="button" aria-pressed="false"
        data-title="Business Toolkit"
        data-desc="Helpful resources to boost your productivity and growth."
@@ -454,7 +456,7 @@ function openModal(title, desc, buyKey) {
   modalTitle.textContent = title;
   modalDesc.textContent = desc;
 
-  if(buyKey === "0VyfB") {
+  if(buyKey === "0VyfB" || buyKey === "nWQ5S") {
     // Inline Payhip buy button with fancy styles applied by CSS above
     modalBuy.innerHTML = `<a href="https://payhip.com/b/${buyKey}" 
       class="payhip-buy-button" data-theme="green" data-product="${buyKey}">Buy Now</a>`;
